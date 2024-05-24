@@ -6,7 +6,20 @@ publish_to: none
 environment:
   sdk: "^3.3.0"
 
+dependencies:
+  flakka_persistence:
+  fpdart:
+    git:
+      url: https://github.com/SandroMaglione/fpdart
+      ref: effect-refactor
+      path: packages/fpdart
+  meta: ^1.15.0
+  objectbox: ^2.5.1
+  path: ^1.9.0
+
 dev_dependencies:
+  build_runner: ^2.4.9
   mocktail: ^1.0.3
+  objectbox_generator: ^2.5.1
   test: ^1.25.2
   very_good_analysis: ^5.1.0
